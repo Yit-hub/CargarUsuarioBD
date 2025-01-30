@@ -1,7 +1,7 @@
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import usuarios.UsuarioManager;
+import usuarios.*;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -16,15 +16,17 @@ public class CargarUsuarioBD {
         public static void main(String[] args) {
     
         Connection conn = UsuarioManager.getconnection();    
-        
+        Usuario datos = new Usuario();
         
         
         //Cerrar conexión con la base de datos
-        try{
-            conn.close();
+        /*
+                try{
+            if(conn != null) conn.close();
         }catch(SQLException e){
             System.out.println("Error al intentar cerrar la conexión "+e.getMessage());
         }
+        */
         
         
     }
