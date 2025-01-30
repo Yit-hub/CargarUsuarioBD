@@ -15,10 +15,10 @@ import usuarios.*;
 public class CargarUsuarioBD {
         public static void main(String[] args) {
     
-        Connection conn = UsuarioManager.getconnection();    
+        //Connection conn = UsuarioManager.getconnection();    
         Usuario datos = new Usuario();
         
-        
+        datos.setVisible(true);
         //Cerrar conexión con la base de datos
         /*
                 try{
